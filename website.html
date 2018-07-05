@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mikayla</title>
+    <link rel="stylesheet" href="website.css">
+    <body style="background-color: black;">
+    <link rel="stylesheet" href= "website.css">
+    <script src='javascript.js'></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: Aqua;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:Red;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: HotPink;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#School">School</a>
+  <a href="#Awards">Awards</a>
+  <a href="#FutureOccupation">Future Occupation</a>
+  <a href="#ProspectiveCollege">Prospective College</a>
+  <a href="#Bio">About Me</a>
+</div>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    background-color:Aqua;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<h2>Modal Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 id="SignUp">Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://s.yimg.com/ny/api/res/1.2/umHJJQAzal.Ar.laG6bGWQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/b427d19dd6238628dc7fa8acc2c212d3" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://cdn.dribbble.com/users/339160/screenshots/3562261/xc_1x.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://mylocalnews.us/arizona/wp-content/uploads/sites/50/2018/03/welcome-slide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="http://citadelsports.com/images/2017/7/20/track_background.jpg" style="width:100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<h1>Mikayla Gudenau <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"></h1>
+<br>
+<p>
+<b id="Age"> Age:</b> High School Senior <br>
+  <img src= "https://pinecreek.asd20.org/PublishingImages/Class%20of%202019.gif">
+
+<b id="School"> School:</b> Life High School Waxahachie <br>
+  <br><id="pic">
+
+  <img src= "data:image/png;base64,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">
+  <h2>HTML Links</h2>
+<p><a href="https://lhs.lifeschools.net/">Life High School Waxahachie</a>
+
+<br>
+<br><b id="Awards"> Awards:</b> FBI Teen Academy Dallas, Life Leader Award, Cedar Hill Law Enforcement Advisory and Development Council President,National Honor Society, Spanish Honor Society, Varsity Basketball, Cross Country, Track, Softball, Top 10 percent, Air Force Association CyberPatriot, A Honor Roll, Crossroads Christian Church Rec Crew <br>
+  <br> <img src= "https://www.billboardmusicawards.com/wp-content/uploads/2015/04/tumblr_mn2qijfs811r4poono1_500.gif"> <br>
+
+ <b id="FutureOccupation">Future Occupation:</b> Orthopedic Surgeon <br>
+ An orthopedic surgeon, or orthopaedic surgeon, is a surgeon who has been educated and trained in the diagnosis and preoperative, operative, and postoperative treatment of diseases and injuries of the musculoskeletal system. ... They may practice in an orthopedic or multi-specialty group, or in a solo practice.
+ <br>
+ <br>
+  <img src="https://media.giphy.com/media/bSF6KvvDeNTa0/giphy-downsized-large.gif"> <br>
+<b id="ProspectiveCollege">Prospective College:</b> Baylor University Waco, TX <br>  <br>
+  <img src= "https://www2.baylor.edu/wp-content/uploads/2017/05/patneff-may17.jpg">
+
+<br>
+<b id="Bio">Bio:</b>
+
+Hello, my name is Mikayla. I am a hard working student working to develop my skills in all aspects of life. My future goals and plans consist of going to college at Baylor University in Waco, TX and in ladder years proceed to medical school and become an Othopedic Surgeon.
+</p2>
+<address>
+<p3>
+<id="author">  Written by <a href="mailto:mikayla.gudenau@lifeschools.org">Mikayla Gudenau</a>.<br>
+A message from the author:<br>
+All achievements and sucesses would not be made possible without the wonderful people in my life including my family and friends who push and support me through everything.<br>
+Thank you! <br>
+</p3>
+</address>
+</body>
+</html>
